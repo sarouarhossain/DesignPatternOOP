@@ -1,13 +1,13 @@
 package strategyPattern.ducks;
 
-import strategyPattern.behavior.FlyWithWings;
-import strategyPattern.behavior.Quack;
+import strategyPattern.behavior.fly.FlyWithWings;
+import strategyPattern.behavior.quack.Quack;
 
-public class MallardDuck extends Duck{
+public class MallardDuck extends Duck {
 
-  public MallardDuck(){
-      flyBehavior = new FlyWithWings();
-      quackBehavior = new Quack();
+  public MallardDuck() {
+    flyBehavior = new FlyWithWings();
+    quackBehavior = new Quack();
   }
 
   @Override

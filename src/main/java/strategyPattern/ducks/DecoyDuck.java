@@ -1,11 +1,11 @@
 package strategyPattern.ducks;
 
-import strategyPattern.behavior.FlyNoWay;
-import strategyPattern.behavior.MuteQuack;
+import strategyPattern.behavior.fly.FlyNoWay;
+import strategyPattern.behavior.quack.MuteQuack;
 
-public class DecoyDuck extends Duck{
+public class DecoyDuck extends Duck {
 
-  public DecoyDuck(){
+  public DecoyDuck() {
     flyBehavior = new FlyNoWay();
     quackBehavior = new MuteQuack();
   }

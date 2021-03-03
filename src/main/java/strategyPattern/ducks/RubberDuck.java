@@ -1,10 +1,10 @@
 package strategyPattern.ducks;
 
-import strategyPattern.behavior.FlyNoWay;
-import strategyPattern.behavior.Squeak;
+import strategyPattern.behavior.fly.FlyNoWay;
+import strategyPattern.behavior.quack.Squeak;
 
-public class RubberDuck extends Duck{
-  public RubberDuck(){
+public class RubberDuck extends Duck {
+  public RubberDuck() {
     flyBehavior = new FlyNoWay();
     quackBehavior = new Squeak();
   }

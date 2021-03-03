@@ -1,7 +1,7 @@
 package strategyPattern;
 
-import strategyPattern.behavior.FlyBehavior;
-import strategyPattern.behavior.FlyRocketPowered;
+import strategyPattern.behavior.fly.FlyBehavior;
+import strategyPattern.behavior.fly.FlyRocketPowered;
 import strategyPattern.ducks.Duck;
 import strategyPattern.ducks.MallardDuck;
 import strategyPattern.ducks.ModelDuck;
@@ -15,10 +15,10 @@ public class DuckSimulator {
     Duck modelDuck = new ModelDuck();
     modelDuck.performFly();
     modelDuck.performQuack();
-
+    //
     FlyBehavior flyFast = new FlyRocketPowered();
     modelDuck.setFlyBehavior(flyFast);
-
-    modelDuck.performFly();
+    //
+    //    modelDuck.performFly();
   }
 }

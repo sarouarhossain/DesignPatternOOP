@@ -1,10 +1,10 @@
 package strategyPattern.ducks;
 
-import strategyPattern.behavior.FlyWithWings;
-import strategyPattern.behavior.Quack;
+import strategyPattern.behavior.fly.FlyWithWings;
+import strategyPattern.behavior.quack.Quack;
 
-public class RedHeadDuck extends Duck{
-  public RedHeadDuck(){
+public class RedHeadDuck extends Duck {
+  public RedHeadDuck() {
     flyBehavior = new FlyWithWings();
     quackBehavior = new Quack();
   }

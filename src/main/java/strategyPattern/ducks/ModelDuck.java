@@ -1,8 +1,7 @@
 package strategyPattern.ducks;
 
-import strategyPattern.behavior.FlyNoWay;
-import strategyPattern.behavior.MuteQuack;
-import strategyPattern.behavior.Squeak;
+import strategyPattern.behavior.fly.FlyNoWay;
+import strategyPattern.behavior.quack.Squeak;
 
 public class ModelDuck extends Duck {
   public ModelDuck() {
